@@ -35,6 +35,8 @@ public class BallController : MonoBehaviour
         {
             m_Rigidbody.isKinematic = false;
         }
+        m_Rigidbody.velocity = Vector3.zero;
+        m_Rigidbody.angularVelocity = Vector3.zero;
         Vector3 pos = new Vector3(m_StartPosition.position.x + Random.Range(-m_BallOffsetFromStart, m_BallOffsetFromStart), m_StartPosition.position.y, m_StartPosition.position.z);
         transform.position = pos;
     }

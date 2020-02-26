@@ -5,6 +5,7 @@ using UnityEngine;
 public class BucketTrigger : MonoBehaviour
 {
     public BallController m_BallController;
+    public PointScript m_PointScript;
 
     void Start()
     {
@@ -18,6 +19,10 @@ public class BucketTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        m_BallController.OnBallInBucket();
+        if (other.tag == "Ball")
+        {
+            m_BallController.OnBallInBucket();
+            m_PointScript.AddPoints();
+        }
     }
 }

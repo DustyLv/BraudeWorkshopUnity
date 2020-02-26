@@ -17,12 +17,18 @@ public class GameStart : MonoBehaviour
         
     }
 
-    private void OnMouseDown()
+    public void StartGame()
     {
+        print("called start");
         if (m_GameStarted == false)
         {
             m_GameBall.OnBallInBucket();
             m_GameStarted = true;
         }
+    }
+
+    private void OnMouseDown()
+    {
+        StartGame();
     }
 }
