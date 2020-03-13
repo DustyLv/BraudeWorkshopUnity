@@ -8,7 +8,14 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/AR Scene.unity
     guid: 9cf6ebeb61511b64ca154c405a88f646
-  - enabled: 1
+  - enabled: 0
     path: Assets/AR Example/Scenes/ARInteraction.unity
     guid: fd4c296f5121a48fa86abc210ff7d6c8
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d9f8b30e1a63486479bfca00d5d65459,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: beebeacb10009ca4d9d98770fe8a1c12,
+      type: 2}
